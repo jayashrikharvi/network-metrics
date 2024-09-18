@@ -1,0 +1,75 @@
+{
+  "quick": true,
+  "fetchPublicExposurePaths": true,
+  "fetchInternalExposurePaths": false,
+  "fetchIssueAnalytics": false,
+  "fetchLateralMovement": true,
+  "fetchKubernetes": false,
+  "fetchCost": false,
+  "first": 50,
+  "query": {
+    "relationships": [
+      {
+        "type": [
+          {
+            "type": "SERVES"
+          }
+        ],
+        "with": {
+          "relationships": [
+            {
+              "negate": true,
+              "type": [
+                {
+                  "reverse": true,
+                  "type": "EXPOSES"
+                }
+              ],
+              "with": {
+                "type": [
+                  "LOAD_BALANCER"
+                ]
+              }
+            },
+            {
+              "negate": true,
+              "type": [
+                {
+                  "reverse": true,
+                  "type": "EXPOSES"
+                }
+              ],
+              "with": {
+                "type": [
+                  "CDN"
+                ]
+              }
+            }
+          ],
+          "select": true,
+          "type": [
+            "ENDPOINT"
+          ],
+          "where": {
+            "port": {
+              "NOT_EQUALS": [
+                443
+              ]
+            },
+            "portValidationResult": {
+              "EQUALS": [
+                "Open"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "select": true,
+    "type": [
+      "VIRTUAL_MACHINE"
+    ]
+  },
+  "projectId": "*",
+  "fetchTotalCount": false
+}

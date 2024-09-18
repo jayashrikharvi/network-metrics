@@ -1,0 +1,30 @@
+{
+    "signal_science": {
+        "API_USER": "",
+        "API_TOKEN": "",
+        "BASE_URL": "https://dashboard.signalsciences.net/api/v0",
+        "CORP_NAME": "autodesk"
+    },
+    "wiz": {
+        "WIZ_API_URL": "https://api.{dc}.app.wiz.io/graphql",
+        "CLIENT_ID": "",
+        "CLIENT_SECRET": "",
+        "AUTH_URL": "https://auth.app.wiz.io/oauth/token"
+    },
+    "servicenow": {
+        "SERVICENOW_INSTANCE": "autodesk",
+        "SERVICENOW_USER": "",
+        "SERVICENOW_PASSWORD": "",
+        "SERVICENOW_TABLE": "sc_req_item",
+        "QP_EXCEPTION_REQ": "sysparm_fields=number%2Cpriority%2Copened_at%2Cvariables.enter_firewall_ritm%2Cclosed_at%2Cstate%2Cimpact&sysparm_query=cat_item%3D689918991b31e950ac7ab9541a4bcb29%5Evariables.51469f501baa2dd0ac7ab9541a4bcb4bISNOTEMPTY",
+        "QP_TICKET_REQ": "sysparm_fields=number%2Cpriority%2Copened_at%2Cstate%2Cimpact&sysparm_query=cat_item%3D82c2f434cc58310087da669fad14c0a0%5Esys_idIN"
+    },
+    "orca":{
+        "ORCA_API_KEY": "",
+        "ORCA_API_URL": "https://api.orcasecurity.io/api/sonar/query?enable_pagination=true&query=Vulnerability&limit=1000&start_at_index=0&get_results_and_count=False"
+    },
+    "Divvycloud":{
+        "COMMERCIAL_URL" : "https://autodesk.customer.divvycloud.com",
+        "COMMERCIAL_SSM_PARAM": ""
+    }
+}

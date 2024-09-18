@@ -1,0 +1,24 @@
+#accordion {
+    height: 700px;
+}
+
+    #accordion .header {
+        font-size: 20px;
+    }
+
+    #accordion .header,
+    #accordion p {
+        margin: 0;
+    }
+
+#accordion-container {
+    margin-right: 400px;
+}
+
+.dx-theme-material #accordion .dx-accordion-item-title {
+    display: flex;
+}
+
+.dx-theme-material #accordion .header {
+    align-self: center;
+}
